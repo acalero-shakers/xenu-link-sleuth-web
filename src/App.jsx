@@ -75,12 +75,35 @@ export default function App() {
     return () => window.removeEventListener('keydown', h)
   })
 
+  // Build report from the live crawler (or demo state). Must NOT close over
+  // React `records`/`opts` from the render that started the crawl — onFinish
+  // captures that stale snapshot (often [] / missing root URL) and shows an
+  // empty "0 URLs found" report even when the list view is full.
+  const doReport = (crawlerOverride = null) => {
+    // Menu onClick may pass a MouseEvent; only treat real XenuCrawler instances.
+    const crawler =
+      crawlerOverride && typeof crawlerOverride.records?.values === 'function'
+        ? crawlerOverride
+        : crawlerRef.current
+    const recs = crawler
+      ? (() => {
+          crawler.recomputeLinksIn()
+          return [...crawler.records.values()]
+        })()
+      : records
+    const root = crawler?.rootUrl || opts?.url || rootUrl || ''
+    const rep = buildReport(recs, root, { reportSections: opts?.reportSections })
+    setReportHtml(renderReportHtml(rep))
+    setDialog('report')
+  }
+
   const startCheck = (cfg) => {
     const crawler = new XenuCrawler(cfg.url, {
       checkExternal: cfg.checkExternal || checkExternalMenu,
       maxLevel: cfg.maxDepth,
       threads: opts?.threads || 30,
       ...(opts || {}),
+      ...cfg,
     })
     crawlerRef.current = crawler
     crawler.onUpdate = (recs, st) => {
@@ -90,19 +113,16 @@ export default function App() {
     }
     crawler.onFinish = (st) => {
       setStats(st)
-      if (st.broken > 0 || confirm('Link sleuth finished. Do you want a report?')) doReport()
+      // Pass the crawler that finished so we never read a stale React snapshot.
+      if (st.broken > 0 || confirm('Link sleuth finished. Do you want a report?')) {
+        doReport(crawler)
+      }
     }
     crawler.onLog = () => {}
-    setOpts(cfg)
+    setOpts((prev) => ({ ...(prev || {}), ...cfg }))
     setDialog(null)
     setRecords([])
     crawler.start()
-  }
-
-  const doReport = () => {
-    const rep = buildReport(records, rootUrl, { reportSections: opts })
-    setReportHtml(renderReportHtml(rep))
-    setDialog('report')
   }
 
   const doFind = () => {
