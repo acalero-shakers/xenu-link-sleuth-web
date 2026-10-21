@@ -1,0 +1,308 @@
+/* ============================================================
+   Xenu's Link Sleuth — classic Windows 95/98 chrome
+   Colors sampled from Xenu.exe behavior (results.html + binary)
+   ============================================================ */
+
+:root {
+  --win-face: #c0c0c0;
+  --win-hilite: #ffffff;
+  --win-shadow: #808080;
+  --win-dark: #000000;
+  --win-title: #000080;
+  --win-title-inactive: #808080;
+  --title-text: #ffffff;
+  --status-ok: #008c00;       /* Xenu green */
+  --status-broken: #ff0000;   /* Xenu red */
+  --status-skipped: #000064;  /* Xenu dark blue */
+  --status-untested: #606060; /* Xenu grey */
+  --ms-sans: 'MS Sans Serif', 'Tahoma', 'Segoe UI', sans-serif;
+}
+
+* { box-sizing: border-box; }
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: var(--win-face);
+  font-family: var(--ms-sans);
+  font-size: 11px;
+  color: #000;
+  overflow: hidden;
+}
+
+/* ---- 3D bevel primitives (Win95) ---- */
+.bevel-out {
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow);
+}
+.bevel-in {
+  border: 1px solid;
+  border-color: var(--win-shadow) var(--win-hilite) var(--win-hilite) var(--win-shadow);
+  box-shadow: inset 1px 1px 0 var(--win-dark), inset -1px -1px 0 var(--win-face);
+}
+
+/* ---- Buttons ---- */
+button.x95 {
+  font-family: var(--ms-sans);
+  font-size: 11px;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow);
+  padding: 3px 10px;
+  min-width: 60px;
+  cursor: default;
+  user-select: none;
+}
+button.x95:active:not(:disabled) {
+  border-color: var(--win-dark) var(--win-hilite) var(--win-hilite) var(--win-dark);
+  box-shadow: inset 1px 1px 0 var(--win-shadow);
+  padding: 4px 9px 2px 11px;
+}
+button.x95:focus-visible {
+  outline: 1px dotted #000;
+  outline-offset: -4px;
+}
+button.x95:disabled { color: var(--win-shadow); text-shadow: 1px 1px 0 var(--win-hilite); }
+
+/* ---- Inputs ---- */
+input.x95, select.x95, textarea.x95 {
+  font-family: var(--ms-sans);
+  font-size: 11px;
+  background: #fff;
+  border: 1px solid;
+  border-color: var(--win-shadow) var(--win-hilite) var(--win-hilite) var(--win-shadow);
+  box-shadow: inset 1px 1px 0 var(--win-dark), inset -1px -1px 0 var(--win-face);
+  padding: 2px 3px;
+}
+input.x95:focus, textarea.x95:focus { outline: none; }
+
+fieldset.x95 {
+  border: 1px solid;
+  border-color: var(--win-shadow) var(--win-hilite) var(--win-hilite) var(--win-shadow);
+  margin: 0 0 8px 0;
+  padding: 6px 8px 8px;
+}
+fieldset.x95 legend { padding: 0 4px; }
+
+/* ---- Menu bar ---- */
+.menubar {
+  display: flex;
+  background: var(--win-face);
+  padding: 1px 2px;
+  border-bottom: 1px solid var(--win-face);
+  position: relative;
+  z-index: 30;
+}
+.menubar > .menu-title {
+  padding: 2px 7px;
+  cursor: default;
+  user-select: none;
+}
+.menubar > .menu-title.open,
+.menubar > .menu-title:hover { background: var(--win-title); color: #fff; }
+.menu-popup {
+  position: absolute;
+  top: 100%;
+  min-width: 220px;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow), 2px 2px 0 rgba(0,0,0,.35);
+  padding: 2px;
+  z-index: 100;
+}
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  padding: 3px 18px 3px 20px;
+  white-space: nowrap;
+  cursor: default;
+}
+.menu-item:hover:not(.disabled) { background: var(--win-title); color: #fff; }
+.menu-item.disabled { color: var(--win-shadow); text-shadow: 1px 1px 0 var(--win-hilite); }
+.menu-sep { height: 0; margin: 3px 2px; border-top: 1px solid var(--win-shadow); border-bottom: 1px solid var(--win-hilite); }
+.menu-shortcut { opacity: .85; }
+
+/* ---- Toolbar ---- */
+.toolbar {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  padding: 1px 2px;
+  background: var(--win-face);
+  border-bottom: 1px solid var(--win-hilite);
+}
+.tb-btn {
+  width: 23px; height: 22px;
+  display: inline-flex; align-items: center; justify-content: center;
+  background: transparent; border: 1px solid transparent; padding: 0;
+}
+.tb-btn:hover:not(:disabled) {
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+}
+.tb-btn:active:not(:disabled) {
+  border-color: var(--win-dark) var(--win-hilite) var(--win-hilite) var(--win-dark);
+}
+.tb-btn:disabled img { filter: grayscale(1) opacity(.45); }
+.tb-sep { width: 6px; height: 20px; margin: 0 2px; border-left: 1px solid var(--win-shadow); border-right: 1px solid var(--win-hilite); }
+.tb-btn img { width: 16px; height: 15px; image-rendering: pixelated; }
+
+/* ---- Status bar ---- */
+.statusbar {
+  display: flex;
+  gap: 2px;
+  padding: 2px;
+  background: var(--win-face);
+}
+.status-pane {
+  border: 1px solid;
+  border-color: var(--win-shadow) var(--win-hilite) var(--win-hilite) var(--win-shadow);
+  padding: 2px 6px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.status-pane.grow { flex: 1; }
+
+/* ---- Main list view ---- */
+.listview-wrap {
+  flex: 1;
+  margin: 2px;
+  background: #fff;
+  overflow: auto;
+}
+table.listview {
+  border-collapse: collapse;
+  width: max-content;
+  min-width: 100%;
+  font-family: var(--ms-sans);
+  font-size: 11px;
+  background: #fff;
+  cursor: default;
+}
+table.listview th {
+  position: sticky; top: 0;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow);
+  padding: 2px 6px;
+  text-align: left;
+  font-weight: normal;
+  white-space: nowrap;
+  user-select: none;
+}
+table.listview th.sorted-asc::after { content: ' ▴'; }
+table.listview th.sorted-desc::after { content: ' ▾'; }
+table.listview td {
+  padding: 1px 6px;
+  white-space: nowrap;
+  border-right: 1px dotted #d8d8d8;
+}
+table.listview tr.selected td { background: var(--win-title); color: #fff !important; }
+table.listview tr:nth-child(even) td { background: #f8f8f8; }
+table.listview tr.selected:nth-child(even) td { background: var(--win-title); }
+
+.c-ok { color: var(--status-ok); }
+.c-broken { color: var(--status-broken); }
+.c-skipped { color: var(--status-skipped); }
+.c-untested { color: var(--status-untested); }
+tr.selected .c-ok, tr.selected .c-broken, tr.selected .c-skipped, tr.selected .c-untested { color: #fff; }
+
+/* ---- Dialogs (modal) ---- */
+.dialog-overlay {
+  position: fixed; inset: 0;
+  background: rgba(0,0,0,.15);
+  display: flex; align-items: center; justify-content: center;
+  z-index: 200;
+}
+.window {
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow), 2px 2px 0 rgba(0,0,0,.35);
+  min-width: 380px;
+}
+.window-titlebar {
+  display: flex; align-items: center;
+  background: linear-gradient(90deg, var(--win-title), #1084d0);
+  color: var(--title-text);
+  font-weight: bold;
+  padding: 2px 3px 3px 4px;
+  user-select: none;
+}
+.window-titlebar .title { flex: 1; font-size: 11px; }
+.title-btn {
+  width: 16px; height: 14px;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  color: #000;
+  font-size: 9px; line-height: 1;
+  display: inline-flex; align-items: center; justify-content: center;
+  margin-left: 2px;
+  font-family: var(--ms-sans);
+}
+.window-body { padding: 10px 12px; }
+.dialog-buttons {
+  display: flex; justify-content: flex-end; gap: 6px;
+  padding: 8px 12px 12px;
+}
+
+/* slider (trackbar) */
+.trackbar { display: inline-flex; align-items: center; gap: 8px; }
+.trackbar input[type='range'] { -webkit-appearance: none; width: 180px; height: 20px; background: transparent; }
+.trackbar input[type='range']::-webkit-slider-runnable-track {
+  height: 4px; background: #808080; border: 1px solid;
+  border-color: var(--win-shadow) var(--win-hilite) var(--win-hilite) var(--win-shadow);
+}
+.trackbar input[type='range']::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 11px; height: 20px;
+  margin-top: -9px;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+}
+
+/* checkbox/radio classic */
+label.check { display: flex; gap: 6px; align-items: flex-start; margin: 3px 0; }
+input[type='checkbox'], input[type='radio'] { margin: 1px 0 0; accent-color: var(--win-title); }
+
+/* MDI area + child windows */
+.mdi-area { flex: 1; position: relative; overflow: hidden; background: var(--win-face); }
+.mdi-child {
+  position: absolute; inset: 2px;
+  display: flex; flex-direction: column;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow);
+}
+
+/* report tab strip */
+.tabstrip { display: flex; padding: 4px 4px 0; }
+.tab {
+  padding: 3px 10px;
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) transparent var(--win-hilite);
+  margin-right: 2px;
+  cursor: default;
+  position: relative; top: 1px;
+}
+.tab.active { background: #f8f8f8; top: 0; padding-top: 5px; z-index: 2; font-weight: bold; }
+
+/* scrollbar: webkit classic-ish */
+::-webkit-scrollbar { width: 16px; height: 16px; }
+::-webkit-scrollbar-track { background: #dfdfdf; background-image: repeating-conic-gradient(#fff 0% 25%, #c0c0c0 0% 50%); background-size: 2px 2px; }
+::-webkit-scrollbar-thumb {
+  background: var(--win-face);
+  border: 1px solid;
+  border-color: var(--win-hilite) var(--win-dark) var(--win-dark) var(--win-hilite);
+  box-shadow: inset 1px 1px 0 var(--win-face), inset -1px -1px 0 var(--win-shadow);
+}
+::-webkit-scrollbar-corner { background: #dfdfdf; }

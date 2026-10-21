@@ -1,0 +1,368 @@
+{
+ "app": "Xenu's Link Sleuth 1.3.9 (web replica)",
+ "binary": {
+  "sha256": "fb4f14392ae3eb92f9b84da479fb6b55a09f1f1b466b8d681b353979da1f9630",
+  "size": 692224,
+  "deps": [
+   "zlibwapi.dll"
+  ],
+  "stack": "MFC/C++ VS2015-2019 XP-compat, WinInet, WinSock, DDE"
+ },
+ "colors": {
+  "ok": "#008C00",
+  "broken": "#FF0000",
+  "skipped": "#000064",
+  "untested": "#606060"
+ },
+ "list_columns": [
+  "Address",
+  "Status",
+  "Type",
+  "Size",
+  "Title",
+  "Date",
+  "Level",
+  "Links Out",
+  "Links In",
+  "Server",
+  "Error",
+  "Duration",
+  "Charset"
+ ],
+ "export_header": [
+  "Address",
+  "Status-Code",
+  "Status-Text",
+  "Type",
+  "Size",
+  "Title",
+  "Date",
+  "Level",
+  "Links Out",
+  "Links In",
+  "Server",
+  "Error",
+  "Duration",
+  "Charset",
+  "Description",
+  "Keywords"
+ ],
+ "menus": {
+  "file": [
+   "Check URL... (Ctrl+N)",
+   "Open... (Ctrl+O)",
+   "Close (Ctrl+W)",
+   "Save (Ctrl+S)",
+   "Save As...",
+   "Export to TAB separated file... (Ctrl+T)",
+   "Export Page Map to TAB separated File...",
+   "Export to GraphViz File...",
+   "Create Google Sitemap File... (Ctrl+G)",
+   "Pause",
+   "Continue",
+   "Stop immediately",
+   "Retry broken links (Ctrl+R)",
+   "Report (R)",
+   "Recent File",
+   "Exit (Ctrl+Q)"
+  ],
+  "edit": [
+   "Copy (Ctrl+C)",
+   "Find... (Ctrl+F)",
+   "Find Again (F3)"
+  ],
+  "view": [
+   "Show broken links only (Ctrl+B)",
+   "Toolbar",
+   "Status Bar",
+   "URL properties... (ALT-ENTER)"
+  ],
+  "options": [
+   "Check external URLs",
+   "Preferences..."
+  ],
+  "window": [
+   "Cascade",
+   "Tile",
+   "Arrange Icons"
+  ],
+  "help": [
+   "Tips and Tricks...",
+   "About Xenu..."
+  ]
+ },
+ "toolbar": [
+  "New check (page)",
+  "Open .xen",
+  "Save",
+  "Start/Go",
+  "Pause",
+  "Stop",
+  "Retry broken (binoculars)",
+  "Report (pages)",
+  "Email report",
+  "Help"
+ ],
+ "ini_keys": [
+  "CheckExternal",
+  "E-Mail-Subject",
+  "E-Mail-To",
+  "E-Mail-From",
+  "E-Mail-SMTP-Server",
+  "E-MailOnlyIfBroken",
+  "E-Mail",
+  "MaxLevel",
+  "Exclude",
+  "Include",
+  "Enable%d",
+  "String%d",
+  "BrowseDir",
+  "Profile",
+  "MakeLowerCase",
+  "ReportOrphans",
+  "ReportStatistics",
+  "SiteMap",
+  "ReportValid",
+  "ReportRedir",
+  "ReportFtpGopher",
+  "ReportBrokenLocal",
+  "ReportBroken2",
+  "ReportBroken1",
+  "RedirectIsError",
+  "AskPassword",
+  "Threads",
+  "MaxRetry",
+  "ListLocalDirectories",
+  "AllowLocalFilesInRemoteCheck",
+  "ExcludeMSO",
+  "FailSimilarHosts",
+  "AllowCookies",
+  "PassiveFtp",
+  "DomainMatch",
+  "ShowBrokenOnly",
+  "CheckDoubleSlash",
+  "Referer",
+  "If-Modified-Since",
+  "Accept",
+  "Javascript",
+  "ReportDuplicates",
+  "ReportTimeouts",
+  "UseDDE",
+  "SessionIdRegEx",
+  "timeout"
+ ],
+ "dialogs": {
+  "starting_point": {
+   "title": "Xenu's starting point",
+   "fields": [
+    "URL root",
+    "Consider URLs beginning with this as 'internal' (Include)",
+    "Do not check any URLs beginning with this (Exclude)",
+    "Check external links checkbox",
+    "Maximum depth",
+    "POST query string",
+    "Local file... (browse)",
+    "More &options...",
+    "OK/Cancel"
+   ]
+  },
+  "preferences_basic": {
+   "title": "Xenu's Link Sleuthing Options \u2014 Basic",
+   "controls": [
+    "Parallel Threads slider (1-100, default 30)",
+    "Current: label",
+    "Maximum depth (default 999)",
+    "Report checkboxes: Broken by links / Broken by page / Broken local / Redirected / Ftp+gopher / Valid text URLs / Site Map / Statistics / Orphan files",
+    "Apply to all jobs"
+   ]
+  },
+  "preferences_advanced": {
+   "title": "Advanced",
+   "controls": [
+    "Allow Cookies (read FAQ first!!)",
+    "Fail all http and ftp URLs with same failed host",
+    "Exclude MSO files",
+    "Allow local files in remote check",
+    "List local directories",
+    "Convert internal URLs to lower case",
+    "Retries:",
+    "Ask for password or certificate when needed",
+    "Treat redirections as errors"
+   ]
+  },
+  "email": {
+   "title": "e-mail options",
+   "controls": [
+    "e-mail report and quit when done",
+    "e-mail only if there are broken links",
+    "SMTP-Server",
+    "From",
+    "To",
+    "Subject",
+    "Test button"
+   ]
+  },
+  "ftp_orphan": {
+   "title": "Remote Orphan Check: Ftp Parameters",
+   "controls": [
+    "use passive mode (for some firewalls)",
+    "ftp user",
+    "ftp password",
+    "ftp directory",
+    "ftp host",
+    "default page (e.g. index.html)"
+   ]
+  },
+  "url_properties": {
+   "title": "URL Properties",
+   "lists": [
+    "Links on this page:",
+    "Pages linking to this one:",
+    "Page URL:",
+    "Title or link text:"
+   ]
+  },
+  "about": {
+   "title": "About Xenu",
+   "text": [
+    "Xenu's Link Sleuth Version 1.0",
+    "Copyright \u00a9 1997 - 2017 Tilman Hausherr",
+    "OK",
+    "FAQ button"
+   ]
+  }
+ },
+ "html_tags_parsed": [
+  "A",
+  "IMG",
+  "LINK",
+  "AREA",
+  "FRAME",
+  "IFRAME",
+  "EMBED",
+  "INPUT",
+  "BGSOUND",
+  "APPLET",
+  "OBJECT",
+  "BASE",
+  "BLOCKQUOTE(cite)",
+  "STYLE(@import,url())",
+  "SCRIPT",
+  "META REFRESH",
+  "LAYER",
+  "GO",
+  "VIDEO"
+ ],
+ "url_schemes_skipped": [
+  "mailto:",
+  "news:",
+  "tel:",
+  "steam:",
+  "pnm:",
+  "mms:",
+  "ldap:",
+  "xmpp:",
+  "irc://",
+  "ymsgr:",
+  "callto:",
+  "wtai://",
+  "rtsp://",
+  "view-source:",
+  "data:",
+  "javascript:(optional regexp)"
+ ],
+ "known_file_exts": [
+  "gif",
+  "jpg",
+  "png",
+  "ico",
+  "txt",
+  "rtf",
+  "pdf",
+  "doc",
+  "docx",
+  "docm",
+  "xls",
+  "xlsx",
+  "xlsm",
+  "ppt",
+  "pptx",
+  "pptm",
+  "exe",
+  "msi",
+  "zip",
+  "rar",
+  "mpg",
+  "mp3",
+  "mp4",
+  "avi",
+  "wmv",
+  "asx",
+  "asf",
+  "swf",
+  "js",
+  "jar",
+  "wml"
+ ],
+ "context_menu": [
+  "Open in Browser",
+  "Copy URL",
+  "Open in Google cache",
+  "Open in Wayback Machine",
+  "Open in Alexa",
+  "Show Indices",
+  "Show Backlinks",
+  "Reset entry (ALT-R)",
+  "URL properties",
+  "Validate URL (W3C)",
+  "Edit in ODP Category",
+  "External tools: Bing info, Google info, Ahrefs, Majestic, OpenSiteExplorer"
+ ],
+ "report_sections": [
+  "Broken links, ordered by link",
+  "Broken links, ordered by page",
+  "Broken local links",
+  "Redirected URLs",
+  "ftp and gopher URLs",
+  "Valid URLs you can submit to a search engine",
+  "Site Map",
+  "Orphan files",
+  "Statistics for managers (MIME table, duplicates content/title/description)"
+ ],
+ "status_texts": [
+  "Ready",
+  "Threads: %d",
+  "%d of %d URLs (%d %%) done",
+  "Link sleuth finished. Do you want a report?"
+ ],
+ "error_texts": [
+  "no such host",
+  "timeout",
+  "cancelled / timeout",
+  "login failure",
+  "invalid response",
+  "no connection",
+  "connection reset",
+  "connection aborted",
+  "incorrect password",
+  "incorrect user",
+  "extended error",
+  "SSL certificate expired",
+  "SSL certificate common name incorrect",
+  "file not found",
+  "user skip",
+  "skip type",
+  "skip external",
+  "redirect"
+ ],
+ "external_links": {
+  "google_cache": "http://www.google.com/search?q=cache:",
+  "wayback": "http://web.archive.org/web/*/",
+  "alexa": "http://www.alexa.com/data/details/?url=",
+  "bing": "http://www.bing.com/search?q=url:",
+  "google_info": "http://www.google.com/search?q=info:",
+  "ahrefs": "http://ahrefs.com/site-explorer/overview/prefix/",
+  "majestic": "http://www.majesticseo.com/reports/site-explorer?q=",
+  "w3c_validator": "http://validator.w3.org/check?uri="
+ }
+}

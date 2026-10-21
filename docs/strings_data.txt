@@ -1,0 +1,1059 @@
+CChildFrame
+TRUE
+Passive
+DefaultPage
+index.html
+User
+Host
+No error
+%d pages linking to this one:
+1 page linking to this one:
+No pages linking to this one
+%d links on this page:
+1 link on this page:
+No links on this page
+error while inserting into listbox
+file://
+Error at new WCHAR []
+Error in MultiByteToWideChar(), CP = %d, GetLastError() = %d
+Settings
+WindowPos
+%u,%u,%d,%d,%d,%d,%d,%d,%d,%d
+CMainFrame
+commdlg_FindReplace
+Recent URL List
+URL%d
+Internal error in InitialShowWindow(): Unable to SetTimer() for idle processing
+(Thread Status: 
+Wait until all active threads have terminated before closing (press PAUSE and STOP if needed).
+Active threads: 
+12:34:56 
+1234567 of 1234567 URLs (100 %) done 
+Threads: 100 
+Ready 
+Options
+CheckExternal
+E-Mail-Subject
+E-Mail-To
+E-Mail-From
+E-Mail-SMTP-Server
+E-MailOnlyIfBroken
+E-Mail
+MaxLevel
+Exclude
+Enable%d
+Include
+String%d
+file:///
+Open HTML file
+BrowseDir
+*.htm
+HTML Files|*.htm; *.html|All Files (*.*)|*.*|
+Profile
+https://
+news:
+gopher://
+mailto:
+ftp://
+http://
+Please input an URL
+MakeLowerCase
+You have entered an URL for which Xenu has remember the settings from a previous session. Do you want to load these settings, thus losing the changes you just made ?
+Please enter an URL first!
+E-Mail message successfully sent
+Failed to send e-mail message: %s
+This is a Test with your XENU.INI file attached
+Failed to connect to SMTP server %s: %s
+'SMTP-Server:' field empty
+'From:' field empty
+'To:' field empty
+COptionPage2
+COptionPage1
+COptionSheet
+ReportOrphans
+ReportStatistics
+SiteMap
+ReportValid
+ReportRedir
+ReportFtpGopher
+ReportBrokenLocal
+ReportBroken2
+ReportBroken1
+RedirectIsError
+AskPassword
+Threads
+MaxRetry
+ListLocalDirectories
+AllowLocalFilesInRemoteCheck
+ExcludeMSO
+FailSimilarHosts
+AllowCookies
+Unknown error
+NULL regexp
+internal error: strcspn 0
+trailing \
+?+* follows nothing
+internal error: \0|) unexpected
+unmatched []
+invalid [] range
+nested *?+
+*+ operand could be empty
+internal error: junk on end
+unmatched ()
+unterminated ()
+too many ()
+regexp too big
+NULL argument to regcomp
+damaged match string
+damaged regexp fed to regsub
+NULL parm to regsub
+corrupted opcode
+internal error: bad call of regrepeat
+corrupted pointers
+regexp corruption
+corrupted regexp
+NULL argument to regexec
+CResizeFormView
+CResizePropertyPage
+Button
+WindowPlacement
+tips.txt
+File '%s' could not be created: %s (cause=%d, OsError=%ld)
+Fatal error: GetTempPath() failed, dwRC = %ld, GetLastError() = %ld
+Fatal error: File %s exists
+.tmp
+TGH-
+Fatal error: UuidToString() failed, rc = %d, TmpDir = '%s', GetLastError() = %ld
+Fatal error: UuidCreate() failed, rc = %d, TmpDir = '%s', GetLastError() = %ld
+Fehler beim Laden von Symbol f
+r %u
+Error when initializing DDE
+level
+retrybroken
+post
+language
+save
+google
+report
+export
+.ini
+TEXT
+Xenu's 
+Xenu 
+Xenu Link Sleuth 1.3.9 beta
+%s, %d
+%s: ShellExecute(0x%08lx,'open','%s',NULL,%s,SW_SHOWNORMAL) = %d (%s)
+C:\Users\Tilman Hausherr\Documents\VC++\Xenu\Xenu.cpp
+%d.%m.%Y %H:%M:%S
+NULL
+Unable to open browser for '%s': error %d: %s
+open
+%s: vLaunchURL() done
+%s: at FreeString
+Unable put %s browser in the foreground: DdeClientTransaction() failed: Error %04X
+Unable to make second connect to %s browser: DdeConnect() failed: Error %04X
+WWW_Activate
+-1,0
+%s: 
+%s: DdeClientTransaction() called; DdeGetLastError() = 0x%04X
+Unable to launch %s browser: DdeConnect() failed: Error 0x%04X
+%s: DdeConnect() failed, DdeGetLastError() = 0x%04X
+%s: hConv=%X, hszItem=%X, hszTopic=%X, hszService=%X
+Netscape
+NSShell
+%s: szTopic = '%s'
+http\shell\open\ddeexec\Topic
+%s: szApplication = '%s'
+http\shell\open\ddeexec\Application
+%s: szDdeExec = '%s'
+http\shell\open\ddeexec
+%s: szCmd = '%s'
+http\shell\open\command
+%s: UseDDE = %d
+UseDDE
+%s: vLaunchURL ('%s') start
+http://home.snafu.de/tilman/xenulink.html
+CXenuDoc
+hellip
+yuml
+thorn
+yacute
+uuml
+ucirc
+uacute
+ugrave
+oslash
+divide
+ouml
+otilde
+ocirc
+oacute
+ograve
+ntilde
+iuml
+icirc
+iacute
+igrave
+euml
+ecirc
+eacute
+egrave
+ccedil
+aelig
+aring
+auml
+atilde
+acirc
+aacute
+agrave
+szlig
+THORN
+Yacute
+Uuml
+Ucirc
+Uacute
+Ugrave
+Oslash
+times
+Ouml
+Otilde
+Ocirc
+Oacute
+Ograve
+Ntilde
+Iuml
+Icirc
+Iacute
+Igrave
+Euml
+Ecirc
+Eacute
+Egrave
+Ccedil
+AElig
+Aring
+Auml
+Atilde
+Acirc
+Aacute
+Agrave
+iquest
+frac34
+frac12
+frac14
+raquo
+ordm
+sup1
+cedil
+middot
+para
+micro
+acute
+sup3
+sup2
+plusmn
+macr
+laquo
+ordf
+copy
+sect
+brvbar
+curren
+pound
+cent
+iexcl
+nbsp
+euro
+rsaquo
+lsaquo
+permil
+Dagger
+dagger
+bdquo
+rdquo
+ldquo
+sbquo
+rsquo
+lsquo
+mdash
+ndash
+tilde
+circ
+Yuml
+scaron
+Scaron
+oelig
+OElig
+apos
+quot
+CLinkInfo
+Content Type
+text/css
+application/xhtml+xml
+text/vnd.wap.wml
+text/html
+video/
+audio/
+application/vnd.openxmlformats-officedocument.presentationml.slideshow
+application/vnd.openxmlformats-officedocument.presentationml.presentation
+application/vnd.openxmlformats-officedocument.spreadsheetml.sheet
+application/vnd.ms-powerpoint.presentation.macroEnabled.12
+application/vnd.ms-excel.sheet.macroEnabled.12
+application/vnd.ms-word.document.macroEnabled.12
+application/vnd.openxmlformats-officedocument.wordprocessingml.document
+application/vnd.ms-powerpoint
+application/vnd.msexcel
+application/msword
+application/pdf
+application/rtf
+text/rtf
+text/richtext
+text/plain
+error %hd
+security certificate revocation failed
+Certificate Authority unfamiliar
+The server is requesting client authentication
+SSL certificate common name incorrect
+SSL certificate expired
+cancelled / timeout
+login failure
+invalid response
+no connection
+connection reset
+connection aborted
+incorrect password
+no such host
+incorrect user
+extended error
+HTTP Version Not Supported
+timeout
+timed out waiting for gateway
+The requested resource is currently locked
+temporarily overloaded
+error response received from gateway
+required not supported
+server error
+unsupported media type
+request URI too long
+request entity was too large
+precondition given in request failed
+keep same verb
+Not Modified
+redirection with new access method
+object temporarily moved
+object permanently moved
+method is not allowed
+use proxy
+ambiguous
+the server refused to accept request without a length
+the resource is no longer available
+user should resubmit with more info
+proxy authentication required
+no response acceptable to client found
+server timed out waiting for request
+forbidden request
+auth required
+not found
+no object data
+no info to return
+parameter incorrect
+mail host ok
+external .jar content
+user skip
+skip type
+skip external
+busy
+pending
+sharing violation
+hardware error
+invalid file handle
+access denied
+invalid path
+too many open files
+file not found
+%%%02X
+&lt;
+&gt;
+&quot;
+&apos;
+&amp;
+</ul>
+</li>
+<li><a href="%s">%s</a>
+<ul>
+oledata.mso
+editdata.mso
+filelist.xml
+javascript:
+file:/
+data:
+/xenulog.txt
+.PAVCInternetException@@
+.PAVCFileException@@
+could not check file %s: %s
+</body></html>
+<a href="%s">%s</a><p>
+<base href="
+</title>
+</head>
+<META http-equiv=Content-Type content="text/html; charset=utf-8">
+<body>
+Directory 
+<html>
+<head>
+<title>
+URL contains '//' which can lead to endless spidering
+linking to file:// is always an error when checking remote URLs
+file:
+no MX or A record found for domain '%s'
+DnsRecordListFree
+DnsQuery_A
+\DNSAPI.DLL
+gunzip error: 
+charset=
+' is not supported
+'Content-Encoding: 
+gzip
+file has zero length
+late
+location: 
+Location: 
+ErrorDlg() aborted
+Xenu_Auth
+map2 OpenRequest() aborted
+?10,10
+map1 SendRequest() aborted
+?1,1
+.MAP
+.map
+SendRequest() aborted
+Content-Type: application/x-www-form-urlencoded
+If-Modified-Since: 
+Accept-Encoding: gzip
+Accept-Language: 
+Accept: 
+URL begins with '/../'
+/../
+'//' is always an error when checking remote URLs
+'\' is always an error when checking remote URLs
+aim:
+steam:
+pnm:
+tel:
+mms:
+ldap:
+xmpp:
+irc://
+ymsgr:
+callto:
+wtai://
+rtsp://
+view-source:
+.jar
+Could not parse URL
+URL is empty
+CheckDoubleSlash
+Referer
+If-Modified-Since
+Accept
+Sleuth 
+Sleuth
+Javascript
+ReportDuplicates
+ReportTimeouts
+PassiveFtp
+DomainMatch
+ShowBrokenOnly
+' could not be opened
+File '
+Open URL List
+*.txt
+Text Files (*.txt)|*.txt|All Files (*.*)|*.*|
+</html>
+</body>
+Compile date: %s %s
+Jul 29 2017
+17:48:44
+<h2>This report has been created %s with <a href="http://home.snafu.de/tilman/xenulink.html" TARGET=_blank>%s</a></h2>
+none found
+Duplicate content:
+Duplicate description (%s):
+<a href='%s'>%s</a>
+Duplicate title (%s):
+%02X
+(Duplicates are not reported, see [Options] ReportDuplicates in XENU.INI)<br/>
+<h3>Duplicates detected:</h3>
+<tr><td>%s</td><td align=right>%d URLs</td><td align=right>%2.2f%%</td></tr>
+<h3>All pages, by result type:</h3>
+</table>
+<tr><td>%s</td><td align=right>%d URLs</td><td align=right>%2.2f%%</td><td align=right>%I64d Bytes</td><td>(%I64d KB)</td><td align=right>%2.2f%%</td></tr>
+Total
+</tr>
+<td></td>
+<td>%.3f</td>
+<td align=right><a href="%s">%I64u Bytes</a></td><td align=right><a href="%s">%I64u Bytes</a></td><td align=right>%I64d Bytes</td><td>(%I64d KB)</td>
+<tr><td>%s</td><td align=right>%d URLs</td><td align=right>%2.2f%%</td><td align=right>%I64d Bytes</td><td>(%I64d KB)</td><td align=right>%2.2f%%</td>
+<tr><td>MIME type</td><td align=right>count</td><td align=right>%% count</td><td align=right>&#931; size</td><td>&#931; size (KB)</td><td align=right>%% size</td><td align=right>min size</td><td align=right>max size</td><td align=right>&Oslash; size</td><td>&Oslash; size (KB)</td><td>&Oslash; time</td></tr>
+<table border=1 cellpadding=5 cellspacing=1>
+Orphans files...
+<h3>Correct internal URLs, by MIME type:</h3>
+<h2><a name="stats"></a>Statistics for managers</h2>
+%d orphan(s) reported (%0.1f KB)
+<br>
+<font size="+2">Orphan search aborted!</font>
+ (%0.1f KB)
+<a href="%s">%s</a>
+: '%s'
+Error %ld while searching in remote ftp directory '%s'
+remote ftp directory '%s' is empty
+: %s
+Error %ld while moving to remote ftp directory '%s'
+local directory '%s' is empty
+local directory '%s' invalid
+file
+<p>Note: Links that aren't spidered (e.g. webforms and dynamically generated links) will appear as orphans in this list.</p>
+<h2><a name="orphans"></a>Orphan files:</h2>
+Ftp: 
+Searching Orphans...
+%d bad local link(s) reported
+<a href='%s#%s'>%s#%s</a> not found
+<a href='%s#%s'>%s#%s</a> anchor occurs multiple times
+<h2><a name="targets"></a>Broken page-local links (also named 'anchors', 'fragment identifiers'):</h2>
+<font size="+2">Sitemap creation aborted!</font>
+Creating sitemap...
+<li>
+<input type="checkbox" id="flip" name="flip" class="sr-only"/>
+<p><label for="flip">Display sitemap horizontally</label></p>
+<p>Note: if you upload this Site Map to your web page, exclude its URL or delete its page before checking, to prevent the software from checking the Site Map itself!</p>
+<h2><a name="sitemap"></a>Site Map of valid HTML pages with a title:</h2>
+http
+<h2><a name="valid"></a>List of valid internal URLs you can submit to a search engine:</h2>
+here is the list to give you the possibility to check them yourself.
+Because the checking of ftp and gopher URLs is unreliable,
+<h2><a name="ftpgopher"></a>List of ftp and gopher URLs</h2>
+linked from page(s):
+<b>The redirection target URL is broken!</b>
+<b>This URL is part of a redirection loop:</b>
+status code: %hd (%s)
+redirected to: <a href="%s" TARGET=_blank>%s</a>
+<h2><a name="redir"></a>List of redirected URLs</h2>
+  \_____ error code: %d (%s)
+link text: %s
+empty URL
+<h2><a name="bypage"></a>Broken links, ordered by page:</h2>
+<hr>
+<p class="noprint"><b><a href="#top">Return to Top</a></b></p>
+%d broken link(s) reported
+</pre>
+<a href="%s" TARGET=_blank>%s</a>
+error code: %d (%s), linked from page(s):
+<pre>
+(Timeouts are not reported, see [Options] ReportTimeouts in XENU.INI)<br/>
+<h2><a name="bylink"></a>Broken links, ordered by link:</h2>
+<center><A HREF="http://www.amazon.com/exec/obidos/redirect-home/thexenubookstore?tag-id=thexenubookstore&amp;placement=home-banner-468x60.gif&amp;site=amazon" TARGET=_blank><IMG BORDER="0" HEIGHT="60" WIDTH="468" ALT="[Xenu sez: visit Amazon.com!]" SRC="http://www.associmg.com/assoc/us/banners/home-banner-468x60.gif?tag-id=thexenubookstore"></A></center>
+<center><A HREF="http://www.xenu.net" TARGET=_blank><IMG BORDER="0" HEIGHT="61" WIDTH="433" ALT="[Can you buy Freedom and Happiness? Don't get fooled by the cult of scientology!]" SRC="http://www.xenu.net/archive/banners/oc20.jpg"></A></center>
+<center><A HREF="http://www.opera.com" TARGET=_blank><IMG BORDER="0" HEIGHT="60" WIDTH="468" ALT="[Opera! The browser that was made for you!]" SRC="http://promote.opera.com/banners/opera/windows/ow-get-00-en-ban.png"></A></center>
+<center><A HREF="http://parody.organique.com" TARGET=_blank><IMG BORDER="0" HEIGHT="57" WIDTH="328" ALT="[False Advertising - A Gallery of Parody]" SRC="http://parody.organique.com/images/ides1.jpg"></A></center>
+<center><A HREF="http://www.valleyofthegeeks.com/Features/BannerAds.html" TARGET=_blank><IMG BORDER="0" HEIGHT="60" WIDTH="468" ALT="[Microsoft - Keeping the world safe from competition!]" SRC="http://www.valleyofthegeeks.com/Features/Banners/votg_banner_ms.gif"></A></center>
+<center><A HREF="http://www.amnesty.org" TARGET=_blank><IMG BORDER="0" HEIGHT="68" WIDTH="468" ALT="[Amnesty International on-line]" SRC="http://web.archive.org/web/20060612231226/http://www.amnesty.org/images/banners/amnesty_banner3.gif"></A></center>
+<center><A HREF="http://www.amnesty.org" TARGET=_blank><IMG BORDER="0" HEIGHT="68" WIDTH="468" ALT="[Amnesty International on-line]" SRC="http://web.archive.org/web/20060612231226/http://www.amnesty.org/images/banners/amnesty_banner1.gif"></A></center>
+<center><A HREF="http://skepdic.com/" TARGET=_blank><IMG BORDER="0" HEIGHT="60" WIDTH="468" ALT="[the skeptic's Dictionary: the truth is in here]" SRC="http://skepdic.com/graphics/skepdic.gif"></A></center>
+<center><A HREF="http://www.lisamcpherson.org" TARGET=_blank><IMG BORDER="0" HEIGHT="78" WIDTH="432" ALT="[Who really killed Lisa McPherson?]" SRC="http://home.snafu.de/tilman/lisaban2.jpg"></A></center>
+<center><A HREF="http://www.cs.cmu.edu/~dst/Fishman/time-behar.html" TARGET=_blank><IMG BORDER="0" ALT="[1991 TIME article: The cult of greed]" HEIGHT="40" WIDTH="400" SRC="http://www.xenu.net/archive/banners/oc11.gif"></A></center>
+<center><A HREF="http://www.xenu.net/" TARGET=_blank><IMG BORDER="0" ALT="[Operation Clambake]" HEIGHT="50" WIDTH="400" SRC="http://www.xenu.net/archive/banners/oc2.gif"></A></center>
+<center><A HREF="http://www.xenu.net/" TARGET=_blank><IMG BORDER="0" ALT="[Come Visit" HEIGHT="49" WIDTH="80" SRC="http://www.xenu.net/archive/banners/cb-vulkan.gif"><IMG BORDER="0" ALT="Operation Clambake]" HEIGHT="49" WIDTH="320" SRC="http://www.xenu.net/archive/banners/cb-vulkan2.gif"></A></center>
+<li><a href="#stats">Statistics for managers</a></li>
+<li><a href="#orphans">Orphan files</a></li>
+<li><a href="#targets">Broken page-local links</a></li>
+<li><a href="#sitemap">Site Map of HTML pages with a Title</a></li>
+<li><a href="#valid">List of valid internal URLs you can submit to a search engine</a></li>
+<li><a href="#ftpgopher">List of ftp and gopher URLs</a></li>
+<li><a href="#redir">List of redirected URLs</a></li>
+<li><a href="#bypage">Broken links, ordered by page</a></li>
+<li><a href="#bylink">Broken links, ordered by link</a></li>
+<h3>Table of contents</h3>
+Do not check any URLs beginning with this:
+<a href="%s" TARGET=_blank>%s</a> (%d URL%s)
+Consider URLs beginning with this as 'internal':
+<h2>Root URL: <a href="%s">%s</a></h2>
+<h2>Created %s with <a href="http://home.snafu.de/tilman/xenulink.html" TARGET=_blank>%s</a> on %s</h2>
+<h1>Broken link report</h1>
+<a name="top"></a>
+<BODY TEXT="#000000" BGCOLOR="#FFFFFF" LINK="#0000EE" VLINK="#551A8B" ALINK="#FF0000">
+</style>
+<style type="text/css">
+<title>Broken link report for %s</title>
+%B %d, %Y at %H:%M:%S
+<meta name="GENERATOR" content="%s">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+by <b><a href="%s">%s</a></b> 
+by <b>%s</b> 
+SponsorLink
+SponsorName
+Could not create file '%s' for report, errno %d: %s
+%s: vLaunchReport () done
+%s: vCreateReport () after, csFileName = '%s'
+%s: vCreateReport () before
+volcanoe.ani
+.htm
+reports
+%s: vLaunchReport () start
+C:\Users\Tilman Hausherr\Documents\VC++\Xenu\XenuDoc.cpp
+Attached is the report from Xenu's Link Sleuth:
+Link sleuth finished. Do you want a report?
+Threads: 0  
+class not found in .jar archive
+Threads: %d  
+.class
+BACKGROUND
+CONTENT
+REFRESH
+HTTP-EQUIV
+<META 
+DATA
+<OBJECT 
+CODE
+<APPLET 
+<BASE 
+CITE
+<BLOCKQUOTE 
+DNS-PREFETCH
+<AREA 
+<LINK 
+<GO 
+<VIDEO 
+<LAYER 
+HREF
+ARCHIVE
+NAME
+CHARSET
+pptm
+pptx
+xlsm
+xlsx
+docm
+docx
+SessionIdRegEx5
+SessionIdRegEx4
+SessionIdRegEx3
+SessionIdRegEx2
+\1\2
+SessionIdRegEx
+CStdioFile::ReadString() failed on file '%s', Cause %d, OsError %ld, errno %d: %s.
+Continue?
+url(
+@import 
+File '%s' could not be deleted, errno = %d
+<!----
+</SCRIPT>
+LONGDESC
+LOWSRC
+PLUGINSPAGE
+STYLE
+<img 
+KEYWORDS
+DESCRIPTION
+CODEBASE
+!!! Title too long !!!
+</TITLE>
+</STYLE>
+<!--
+<TITLE>
+<TABLE 
+<TR 
+<TH 
+<TD 
+<BODY 
+<BGSOUND 
+<SCRIPT
+<INPUT 
+<FRAME 
+<EMBED 
+<IFRAME 
+<IMG 
+<STYLE 
+Internal error: Could not open %s '%s' to read content of URL '%s', cause: %s
+temporary file
+Internal error: Tempfile '%s' is not in %%TEMP%%
+<a href="%s">redir</a>
+CListCtrl::InsertItem() = -1  :-(
+%d.%m.%Y  %H:%M:%S
+OriginPage
+LinkToPage
+LinkToPageStatusCode
+LinkToPageStatusText
+LinkToPageTitle
+OriginPageDate
+OriginPageTitle
+' for writing
+Could not open file '
+" -> "
+digraph G
+</urlset>
+</url>
+<priority>0.8</priority>
+<priority>0.9</priority>
+<changefreq>monthly</changefreq>
+<lastmod>%s</lastmod>
+<loc>%s</loc>
+%Y-%m-%d
+<url>
+redir
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<?xml version="1.0" encoding="UTF-8"?>
+.%03d
+%M:%S
+%I64d
+Address
+Status-Code
+Status-Text
+Type
+Size
+Title
+Date
+Level
+Links Out
+Links In
+Server
+Error
+Duration
+Charset
+Description
+Keywords
+Export into Excel readable file (D)
+Text files (*.txt)|*.txt|All Files (*.*)|*.*|
+Export Pagemap
+Create Google Sitemap
+*.xml
+XML files (*.xml)|*.xml|All Files (*.*)|*.*|
+Create GraphViz File
+*.gv
+GraphViz files (*.gv)|*.gv|All Files (*.*)|*.*|
+gzread error: %s.
+fwrite on '%s' failed: %s.
+gzopen of '%s' failed: %s.
+fopen of '%s' failed: %s.
+CXenuView
+Threads: 0
+SysListView32
+In Links
+Out Links
+Status
+ListCtrl
+http://www.google.com/search?q=cache:
+http://web.archive.org/web/*/
+http://www.alexa.com/data/details/?url=
+http://www.bing.com/search?q=url:
+http://www.google.com/search?q=info:
+http://ahrefs.com/site-explorer/overview/prefix/
+http://www.majesticseo.com/reports/site-explorer?q=
+/a!links!!filter!follow!!source!external!!target!page
+http://www.opensiteexplorer.org/
+%252F
+URL p&roperties
+printto
+\shell\
+\shell
+Validate URL
+Edit in ODP Category 
+....
+http://dmoz.org/
+http://editors.dmoz.org
+http://dmoz.org
+Reset entry
+ALT-R
+Show Backlinks
+Show Indices
+Open in Alexa
+Open in Wayback Machine
+Open in Google cache
+http://waybackmachine.org/
+https://web.archive.org/
+http://web.archive.org/
+Open in Browser
+Copy URL
+Unable to open '%s': error %d: %s
+http://validator.w3.org/check?uri=
+&cat=
+http://dmoz.org/editors/editurl.cgi?url=
+http://editors.dmoz.org/
+%s.%03d
+%d of %d URLs (%d %%) done
+%d:%02d:%02d
+Could not reserve space for Clipboard content
+Unable to copy to the Clipboard data
+Cannot empty the Clipboard
+Cannot open the Clipboard
+Search String Not Found!
+ReadValue has implemented only the cases with nbits = 8, 16, 24, 32.
+ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789+/
+InternetAttemptConnect
+InternetAutodialHangup
+InternetGetConnectedState
+\WININET.DLL
+%s <%s>
+iso-8859-1
+application/octet-stream
+Content-Location: %s
+Content-ID: %s
+Content-Base: %s
+--%s
+Content-Type: %s; charset=%s
+Content-Transfer-Encoding: quoted-printable
+Content-Transfer-Encoding: base64
+Content-Type: %s; charset=%s; Boundary="%s"
+Content-Type: %s; charset=%s; name=%s
+Content-Disposition: attachment; filename="%s"
+Content-Type: %s; charset=%s; name=%s; Boundary="%s"
+UTF-8
+--%s--
+CPJNSMTPConnection v2.42
+X-Priority: 5
+X-Priority: 3
+X-Priority: 1
+Date: 
+Reply-To: 
+Content-Type: %s;
+charset=%s
+MIME-Version: 1.0
+Content-Type: %s
+Content-Type: %s; boundary="%s"
+X-Mailer: 
+Subject: 
+Cc: 
+To: 
+From: 
+%a, %d %b %Y %H:%M:%S 
+%+.2d%.2d
+english
+multipart/mixed
+This is a multi-part message in MIME format
+auto
+CPJNSMTPConnection::Connect, An unexpected HELO/EHLO response was received
+CPJNSMTPConnection::Connect, An unexpected SMTP login response was received
+CPJNSMTPConnection::Connect, Could not connect to the SMTP server %s on port %d, GetLastError returns: %d
+CPJNSMTPConnection::Connect, Could not connect to the SMTP server %s on port %d from LocalAddress:%s, GetLastError returns: %d
+CPJNSMTPConnection::Connect, Failed to create client socket, GetLastError returns: %d
+CPJNSMTPConnection::ConnectESMTP, An unexpected response was received occurred while sending the EHLO command
+CPJNSMTPConnection::ConnectESMTP, An unexpected error occurred while sending the EHLO command
+EHLO %s
+CPJNSMTPConnection::ConnectSMTP, An unexpected error occurred while sending the HELO command
+HELO %s
+CPJNSMTPConnection::Disconnect, Already disconnected from SMTP server, doing nothing
+CPJNSMTPConnection::Disconnect, An unexpected QUIT response was received
+CPJNSMTPConnection::Disconnect, Failed in call to send QUIT command, GetLastError returns: %d
+QUIT
+CPJNSMTPConnection::SendBodyPart, Failed in call to send body parts footer, GetLastError returns: %d
+CPJNSMTPConnection::SendBodyPart, Failed in call to send body parts body, GetLastError returns: %d
+CPJNSMTPConnection::SendBodyPart, Failed in call to send body parts header, GetLastError returns: %d
+CPJNSMTPConnection::SendMessage, An unexpected end of message response was received
+CPJNSMTPConnection::SendMessage, Failed in call to send end of message indicator, GetLastError returns: %d
+CPJNSMTPConnection::SendMessage, Failed in call to send the header / body separator, GetLastError returns: %d
+CPJNSMTPConnection::SendMessage, Failed in call to send the header, GetLastError returns: %d
+CPJNSMTPConnection::SendMessage, An unexpected DATA response was received
+CPJNSMTPConnection::SendMessage, An unexpected MAIL response was received
+CPJNSMTPConnection::SendMessage, Failed in call to send MAIL command, GetLastError returns: %d
+MAIL FROM:<%s>
+CPJNSMTPConnection::SendRCPTForRecipient, An unexpected RCPT response was received
+CPJNSMTPConnection::SendRCPTForRecipient, Failed in call to send RCPT command, GetLastError returns: %d
+RCPT TO:<%s>
+CPJNSMTPConnection::ReadResponse, Timed Out waiting for response from SMTP server
+CPJNSMTPConnection::AuthLogin, An unexpected request received when expecting username request
+CPJNSMTPConnection::AuthLogin, An unexpected request received when expecting password request
+CPJNSMTPConnection::AuthLogin, AUTH LOGIN authentication was unsuccessful
+CPJNSMTPConnection::AuthLogin, An unexpected error occurred while sending the password
+password:
+CPJNSMTPConnection::AuthLogin, Server did not respond correctly to AUTH LOGIN username field
+CPJNSMTPConnection::AuthLogin, An unexpected error occurred while sending the username
+username:
+CPJNSMTPConnection::AuthLogin, Server does not support AUTH LOGIN
+CPJNSMTPConnection::AuthLogin, An unexpected error occurred while sending the AUTH command
+AUTH LOGIN
+CPJNSMTPConnection::AuthLoginPlain, AUTH LOGIN PLAIN authentication was unsuccessful
+CPJNSMTPConnection::AuthLoginPlain, An unexpected error occurred while sending the password
+CPJNSMTPConnection::AuthLoginPlain, Server did not response correctly to AUTH LOGIN PLAIN username field
+CPJNSMTPConnection::AuthLoginPlain, An unexpected error occurred while sending the username
+CPJNSMTPConnection::AuthLoginPlain, Server does not support AUTH LOGIN PLAIN
+CPJNSMTPConnection::AuthLoginPlain, An unexpected error occurred while sending the AUTH command
+AUTH LOGIN PLAIN
+CPJNSMTPConnection::CramLogin, AUTH CRAM-MD5 authentication was unsuccessful
+CPJNSMTPConnection::CramLogin, An unexpected error occurred while sending the username
+%02x
+CPJNSMTPConnection::CramLogin, Server does not support AUTH CRAM-MD5
+CPJNSMTPConnection::CramLogin, An unexpected error occurred while sending the AUTH command
+AUTH CRAM-MD5
+.?AVCObject@@
+.?AVCCmdTarget@@
+.?AVCWnd@@
+.?AVCDialog@@
+.PAVCException@@
+.?AVCCmdUI@@
+.?AVCTestCmdUI@@
+.PAVCUserException@@
+.?AVCTempWnd@@
+.?AVCNoTrackObject@@
+.?AV_AFX_CTL3D_STATE@@
+.?AVCFrameWnd@@
+.?AVCMDIFrameWnd@@
+.?AVCMDIChildWnd@@
+.?AV_AFX_WIN_STATE@@
+.?AVCWinThread@@
+.?AVCWinApp@@
+.?AVCCommandLineInfo@@
+.?AVCMapStringToString@@
+.?AV_AFX_THREAD_STATE@@
+.?AVAFX_MODULE_STATE@@
+.?AVAFX_MODULE_THREAD_STATE@@
+.?AV_AFX_BASE_MODULE_STATE@@
+.?AVCStatic@@
+.?AVCButton@@
+.?AVCListBox@@
+.?AVCEdit@@
+.?AVCDC@@
+.?AVCClientDC@@
+.?AVCWindowDC@@
+.?AVCPaintDC@@
+.?AVCGdiObject@@
+.?AVCBrush@@
+.?AVCTempDC@@
+.?AVCTempGdiObject@@
+.PAX
+.PAVCObject@@
+.PAVCSimpleException@@
+.PAVCResourceException@@
+.?AVCException@@
+.?AVCSimpleException@@
+.?AVCResourceException@@
+.?AVCUserException@@
+.PAVCArchiveException@@
+.?AVCControlBar@@
+.?AVCToolBar@@
+.?AVCToolCmdUI@@
+.?AVCStatusBar@@
+.?AVCStatusCmdUI@@
+.?AVCStringArray@@
+.?AVCDockBar@@
+.?AVCMiniFrameWnd@@
+.?AVCMiniDockFrameWnd@@
+.?AV_AFX_CTL3D_THREAD@@
+.?AVCCommonDialog@@
+.?AVCFileDialog@@
+.?AVCPropertyPage@@
+.?AVCPropertySheet@@
+.?AVCRgn@@
+.?AVCSliderCtrl@@
+.?AVCImageList@@
+.?AVCTempImageList@@
+.?AVCView@@
+.?AVCScrollView@@
+.?AVCFormView@@
+.?AVCMenu@@
+.?AVCTempMenu@@
+.PAVCMemoryException@@
+.PAVCNotSupportedException@@
+.?AVCMemoryException@@
+.?AVCNotSupportedException@@
+.?AVCFileException@@
+.?AVCFile@@
+.?AVCDocTemplate@@
+.?AVCMultiDocTemplate@@
+.?AV_AFX_SOCK_STATE@@
+.?AVCMapStringToPtr@@
+.?AVCMapStringToOb@@
+.?AVCMirrorFile@@
+.?AVCDWordArray@@
+.?AVCWordArray@@
+.?AVCObArray@@
+.?AVCInternetSession@@
+.?AVCStdioFile@@
+.?AVCInternetFile@@
+.?AVCInternetConnection@@
+.?AVCFtpConnection@@
+.?AVCHttpConnection@@
+.?AVCHttpFile@@
+.?AVCGopherFile@@
+.?AVCFileFind@@
+.?AVCFtpFileFind@@
+.?AVCGopherLocator@@
+.?AVCInternetException@@
+.?AVCSyncObject@@
+.?AVCCriticalSection@@
+.?AVCMapPtrToPtr@@
+.?AVCSessionMapPtrToPtr@@
+.?AVCMutex@@
+.?AVCPtrArray@@
+.?AVCUIntArray@@
+.?AVCCtrlView@@
+.?AVCListView@@
+.?AVCFindReplaceDialog@@
+.?AUCThreadData@@
+.?AVCHandleMap@@
+.?AVCPtrList@@
+.?AVCRecentFileList@@
+.?AVCArchiveException@@
+.?AVCDocManager@@
+.?AVCNewTypeDlg@@
+.?AVCDockContext@@
+.?AU_AFX_PROPPAGEFONTINFO@@
+.?AVCToolTipCtrl@@
+.?AVtype_info@@
+040a
+1252
+040b
+040c
+040f
+041d
+042d
+080a
+080c
+0c07
+0c09
+0c0a
+0c0c
+100a
+100c
+140a
+140c
+180a
+1c09
+1c0a
+200a
+240a
+280a
+2c0a
+300a
+340a
+380a
+3c0a
+kU'9
+HMXB
+?Zd;
+?/L[
+S;uD
+z?aUY
+D?$?
+U>c{
+zc%C1
+.:3q
+-64OS
+NKeb
+.?AVexception@@
+.?AVlogic_error@std@@
+.?AVlength_error@std@@
+.?AVout_of_range@std@@
+edit
+hangeul
+kanji
+roman
+hangeulmenu
+kanjimenu
+windows
+C3dHNew
+C3dLNew
+C3dNew
+C3dH
+C3dL
+C3dD
+#32770
+DisableThreadLibraryCalls
