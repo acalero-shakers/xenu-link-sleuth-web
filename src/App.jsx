@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react'
 import { MenuBar } from './components/MenuBar.jsx'
-import { Toolbar, StatusBar } from './components/Chrome.jsx'
+import { Toolbar, StatusBar, CreditsFooter } from './components/Chrome.jsx'
 import { LinkListView } from './components/LinkListView.jsx'
 import { StartingPointDialog } from './components/StartingPointDialog.jsx'
 import { PreferencesDialog } from './components/PreferencesDialog.jsx'
@@ -227,6 +227,7 @@ export default function App() {
       </div>
 
       {showStatus && <StatusBar panes={statusPanes} />}
+      <CreditsFooter />
 
       {dialog === 'new' && (
         <StartingPointDialog
