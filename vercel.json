@@ -1,0 +1,5 @@
+{
+  "rewrites": [
+    { "source": "/xenu-proxy", "destination": "/api/xenu-proxy" }
+  ]
+}

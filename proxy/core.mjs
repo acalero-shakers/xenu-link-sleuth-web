@@ -1,9 +1,10 @@
 // Xenu proxy core — same-origin endpoint that performs real HTTP fetches
 // server-side so the browser crawler is not blocked by CORS.
-// Used by: vite plugin (dev) and server.mjs (production).
+// Used by: vite plugin (dev), server.mjs (Node prod), api/xenu-proxy.js (Vercel).
 //
 // Env: XENU_PER_HOST (default 6), XENU_TIMEOUT_MS (default 65000),
-//      XENU_UA (default: current Chrome UA), XENU_ALLOW_PRIVATE (default 1)
+//      XENU_UA (default: current Chrome UA), XENU_ALLOW_PRIVATE
+//      (unset/anything-but-0 = block private/loopback; set 0 to allow)
 
 const PER_HOST = Number(process.env.XENU_PER_HOST || 6)
 const TIMEOUT_MS = Number(process.env.XENU_TIMEOUT_MS || 65000)
