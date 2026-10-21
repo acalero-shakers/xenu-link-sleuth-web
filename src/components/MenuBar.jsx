@@ -16,7 +16,7 @@ export function MenuBar({ menus }) {
   return (
     <div className="menubar" ref={ref}>
       {menus.map((m, mi) => (
-        <div key={m.label} style={{ position: 'relative' }}>
+        <div key={m.label} className="menu-root">
           <div
             className={`menu-title ${open === mi ? 'open' : ''}`}
             onMouseDown={(e) => { e.preventDefault(); setOpen(open === mi ? null : mi) }}

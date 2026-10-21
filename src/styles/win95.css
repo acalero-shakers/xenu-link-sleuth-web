@@ -95,13 +95,14 @@ fieldset.x95 legend { padding: 0 4px; }
   position: relative;
   z-index: 30;
 }
-.menubar > .menu-title {
-  padding: 2px 7px;
+.menu-root { position: relative; }
+.menubar .menu-title {
+  padding: 2px 10px;
   cursor: default;
   user-select: none;
 }
-.menubar > .menu-title.open,
-.menubar > .menu-title:hover { background: var(--win-title); color: #fff; }
+.menubar .menu-title.open,
+.menubar .menu-title:hover { background: var(--win-title); color: #fff; }
 .menu-popup {
   position: absolute;
   top: 100%;
@@ -122,7 +123,7 @@ fieldset.x95 legend { padding: 0 4px; }
   cursor: default;
 }
 .menu-item:hover:not(.disabled) { background: var(--win-title); color: #fff; }
-.menu-item.disabled { color: var(--win-shadow); text-shadow: 1px 1px 0 var(--win-hilite); }
+.menu-item.disabled { color: #808080; text-shadow: 1px 1px 0 var(--win-hilite); }
 .menu-sep { height: 0; margin: 3px 2px; border-top: 1px solid var(--win-shadow); border-bottom: 1px solid var(--win-hilite); }
 .menu-shortcut { opacity: .85; }
 
@@ -130,7 +131,7 @@ fieldset.x95 legend { padding: 0 4px; }
 .toolbar {
   display: flex;
   align-items: center;
-  gap: 0;
+  gap: 2px;
   padding: 1px 2px;
   background: var(--win-face);
   border-bottom: 1px solid var(--win-hilite);
