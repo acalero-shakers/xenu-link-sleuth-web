@@ -82,6 +82,14 @@ tables, the CHM help file. The full extracted spec lives in
 - Optional same-origin **crawl proxy** (`proxy/`) that removes CORS pain: per-host politeness limiter (≤6 concurrent), DNS/TLS error passthrough as real error text, SSRF guard, WAF-challenge detection
 - `?demo=1` loads a sample crawl for screenshots and UI hacking
 
+
+## 🔗 Live demo
+
+- **Static demo (Hostinger):** <https://aliceblue-gerbil-404285.hostingersite.com/?demo=1>
+  — UI fully working; live crawls limited to CORS-enabled targets (shared hosting has no Node proxy).
+- **Full experience (proxy + any site):** run locally with `npm run dev`, or deploy `proxy/server.mjs`
+  to any Node host / VPS.
+
 ## 🚀 Quick start
 
 Prerequisites: **Node.js ≥ 18** (22+ recommended) and npm.
