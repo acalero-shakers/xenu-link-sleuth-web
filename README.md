@@ -148,13 +148,18 @@ probe decides. All reverse-engineering evidence and the extracted spec are in [`
 
 ## 📦 Deployment
 
+**Vercel (recommended for this repo):** Vite static build + serverless `/xenu-proxy`
+(`api/xenu-proxy.js`, rewritten in `vercel.json`). Same crawl path as local dev.
+Function `maxDuration` is 60s (plan may cap lower — Hobby is 10s). Optional project
+env: `XENU_PER_HOST`, `XENU_TIMEOUT_MS`, `XENU_UA`, `XENU_ALLOW_PRIVATE`.
+
 **Static only (no proxy — CORS-limited crawling):**
 
 ```bash
-npm run build     # dist/ → any static host (nginx, Pages, Vercel...)
+npm run build     # dist/ → any static host (nginx, Pages, …)
 ```
 
-**With proxy (recommended — crawls arbitrary sites):**
+**With Node proxy (VPS / Docker):**
 
 ```bash
 npm run build
@@ -168,9 +173,9 @@ Put it behind nginx/Caddy with TLS as usual. Useful env vars:
 | `XENU_PER_HOST` | `6` | max concurrent requests per target host (politeness) |
 | `XENU_TIMEOUT_MS` | `65000` | upstream fetch timeout |
 | `XENU_UA` | current Chrome | User-Agent sent to targets |
-| `XENU_ALLOW_PRIVATE` | `1`* | set `0` to block loopback/private targets (SSRF guard) |
+| `XENU_ALLOW_PRIVATE` | unset (guard on) | set `0` to **allow** private/loopback; leave unset/other to **block** (SSRF) |
 
-\* enable the guard (`0`) in any multi-user/public deployment.
+Keep the SSRF guard on for any multi-user/public deployment (do not set `XENU_ALLOW_PRIVATE=0`).
 
 **Docker (sketch):**
 
