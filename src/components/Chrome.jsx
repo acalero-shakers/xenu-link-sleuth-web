@@ -34,6 +34,34 @@ export function StatusBar({ panes }) {
   )
 }
 
+const REPO_URL = 'https://github.com/acalero-shakers/xenu-link-sleuth-web'
+const LINKEDIN_URL = 'https://www.linkedin.com/in/alfonsocalerogijon/'
+
+export function CreditsFooter() {
+  return (
+    <footer className="credits-footer" role="contentinfo">
+      <span className="credits-item">
+        <a href="/LICENSE" target="_blank" rel="noopener noreferrer">MIT</a>
+        {' '}license
+      </span>
+      <span className="credits-sep" aria-hidden="true">·</span>
+      <span className="credits-item">
+        <a href={REPO_URL} target="_blank" rel="noopener noreferrer">
+          github.com/acalero-shakers/xenu-link-sleuth-web
+        </a>
+      </span>
+      <span className="credits-sep" aria-hidden="true">·</span>
+      <span className="credits-item">
+        Alfonso Calero
+        {' · '}
+        <a href={LINKEDIN_URL} target="_blank" rel="noopener noreferrer">LinkedIn</a>
+      </span>
+      <span className="credits-sep" aria-hidden="true">·</span>
+      <span className="credits-item credits-love">Made with ♥ for SEO</span>
+    </footer>
+  )
+}
+
 export function Window({ title, children, onClose, style, footer }) {
   return (
     <div className="window" style={style}>
